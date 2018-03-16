@@ -30,13 +30,14 @@ body, html {
 
 /* style="overflow:hidden;" */
 </style>
+
 </head>
 <body >
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="study_board" class="w3-bar-item w3-button w3-wide">HANBOMAL</a>
+    <a href="main" class="w3-bar-item w3-button w3-wide">HANBOMAL</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="about" class="w3-bar-item w3-button">ABOUT</a>
@@ -64,8 +65,8 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">MYPAGE</a>
+  <a href="study_board" onclick="w3_close()" class="w3-bar-item w3-button">WORKSPACE</a>
 </nav>
 
 
@@ -102,4 +103,22 @@ body, html {
     </div>
   </div>
  </body>
+ <script type="text/javascript">
+
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+</script>
 </html>
